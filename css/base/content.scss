@@ -1,0 +1,193 @@
+  $base-body-background:                          $global-background;
+  $base-body-font-family:                         $global-font-family;
+  $base-body-font-weight:                         normal;
+  $base-body-font-size:                           $global-font-size;
+  $base-body-line-height:                         $global-line-height;
+  $base-body-color:                               $global-color;
+
+  $base-link-color:                               $global-link-color;
+  $base-link-text-decoration:                     none;
+  $base-link-hover-color:                         $global-link-hover-color;
+  $base-link-hover-text-decoration:               underline;
+
+  $base-strong-font-weight:                       bolder;
+  $base-quote-font-style:                         italic;
+
+  $base-margin-vertical:                          $global-margin;
+
+  $base-heading-font-family:                      $global-font-family;
+  $base-heading-font-weight:                      bold;
+  $base-heading-color:                            inherit;
+  $base-heading-text-transform:                   none;
+  $base-heading-margin-top:                       $global-margin;
+  $base-h1-font-size:                             36px;
+  $base-h1-line-height:                           0.74;
+  $base-h2-font-size:                             36px;
+  $base-h2-line-height:                           1.28;
+  $base-h3-font-size:                             30px;
+  $base-h3-line-height:                           1.4;
+  $base-h4-font-size:                             30px;
+  $base-h4-line-height:                           1.4;
+  $base-h5-font-size:                             26px;
+  $base-h5-line-height:                           1.4;
+  $base-h6-font-size:                             20px;
+  $base-h6-line-height:                           1;
+
+  $base-list-padding-left:                        30px;
+
+  $base-hr-margin-vertical:                       $global-margin;
+  $base-hr-border:                                $global-border-width solid $global-border;
+
+  $base-blockquote-color:                         #333;
+  $base-blockquote-font-size:                     $global-font-size;
+  $base-blockquote-line-height:                   1.5;
+  $base-blockquote-font-style:                    italic;
+  $base-blockquote-margin-vertical:               $global-margin;
+  $base-blockquote-footer-color:                  #333;
+  $base-blockquote-footer-margin-top:             $global-margin;
+  $base-blockquote-footer-font-size:              $global-font-size;
+  $base-blockquote-footer-line-height:            1.5;
+
+  $base-selection-background:                     #39f;
+  $base-selection-color:                          $global-inverse-color;
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font: $base-body-font-weight $base-body-font-size $base-body-font-family;
+  line-height: $base-body-line-height;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: $base-body-background;
+  color: $base-body-color;
+  direction: rtl;
+}
+
+a {
+  color: $base-link-color;
+  text-decoration: $base-link-text-decoration;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+  outline: none;
+}
+
+a:hover {
+  color: $base-link-hover-color;
+  text-decoration: $base-link-hover-text-decoration;
+}
+
+b,
+strong {
+  font-weight: $base-strong-font-weight;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+img {
+  height: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 $base-margin-vertical 0;
+}
+
+*+p,
+*+ul,
+*+ol {
+  margin-top: $base-margin-vertical;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 $base-heading-margin-top 0;
+  font-family: $base-heading-font-family;
+  font-weight: $base-heading-font-weight;
+  color: $base-heading-color;
+  text-transform: $base-heading-text-transform;
+}
+
+*+h1,
+*+h2,
+*+h3,
+*+h4,
+*+h5,
+*+h6 {
+  margin-top: $base-margin-vertical;
+}
+
+h1, .h1 {
+  font-size: $base-h1-font-size;
+  line-height: $base-h1-line-height;
+}
+
+h2, .h2 {
+  font-size: $base-h2-font-size;
+  line-height: $base-h2-line-height;
+}
+
+h3, .h3 {
+  font-size: $base-h3-font-size;
+  line-height: $base-h3-line-height;
+}
+
+h4, .h4 {
+  font-size: $base-h4-font-size;
+  line-height: $base-h4-line-height;
+}
+
+h5, .h5 {
+  font-size: $base-h5-font-size;
+  line-height: $base-h5-line-height;
+}
+
+h6, .h6 {
+  font-size: $base-h6-font-size;
+  line-height: $base-h6-line-height;
+}
+
+::-moz-selection {
+  background: $base-selection-background;
+  color: $base-selection-color;
+  text-shadow: none;
+}
+
+::selection {
+  background: $base-selection-background;
+  color: $base-selection-color;
+  text-shadow: none;
+}
+
+a,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+[hidden] {
+  display: none !important;
+}

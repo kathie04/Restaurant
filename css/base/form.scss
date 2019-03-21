@@ -1,0 +1,125 @@
+  $form-height:                                   $global-control-height;
+  $form-line-height:                              1.4;
+  $form-padding:                                  4px 10px;
+
+  $form-background:                               #e7e7e8;
+  $form-color:                                    $global-muted-color;
+
+  $form-focus-background:                         #e7e7e8;
+  $form-focus-color:                              $global-muted-color;
+
+  $form-placeholder-color:                        #609d81;
+
+  $form-invalid-color:                            $global-danger-background;
+  $form-valid-color:                              $global-success-background;
+
+  $form-select-padding-right:                     20px;
+  $form-select-option-color:                      #444;
+
+  $internal-form-checkbox-image:                  url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" stroke="black"><path fill="none" stroke="inherit" stroke-width="1.8824" stroke-miterlimit="50" stroke-linecap="butt" stroke-linejoin="miter" d="M20.028 2.353l-12.028 12.028-6.381-6.381"></path></svg>');
+  $internal-form-checkbox-indeterminate-image:    url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="black"><path d="M3 8h10v1h-10v-1z"></path></svg>');
+
+
+input,
+button,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+[type="checkbox"]:not(:disabled) {
+  cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+input:not([type]),
+input[type=email],
+input[type=tel],
+input[type=text],
+textarea {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: $form-padding;
+  min-height: $form-height;
+  background: $form-background;
+  border: none;
+  color: $form-color;
+  box-shadow: 0 0 0 0 transparent inset;
+  border-radius: 7px;
+}
+
+::placeholder {
+  color: $form-placeholder-color;
+  opacity: 1;
+}
+
+input:not([type]):focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+textarea:focus {
+  background: $form-focus-background;
+  color: $form-focus-color;
+}
+
+input:not([type][disabled]),
+input[type=email][disabled],
+input[type=tel][disabled],
+input[type=text][disabled],
+textarea:disabled {
+  pointer-events: none;
+  opacity: .45;
+}
+
+
+  .checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+  }
+  .checkbox-text {
+    position: relative;
+    padding: 0 22px 0 0;
+    cursor: pointer;
+  }
+  .checkbox-text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+  }
+  .checkbox-text:after {
+    content: url("../img/check.png");
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: none;
+  }
+
+  .checkbox input:checked + .checkbox-text:after {
+    display: block;
+  }
+

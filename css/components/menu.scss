@@ -1,0 +1,112 @@
+.section-menu {
+  background-color: rgba(0,0,0,0.5);
+  padding: 190px 0 27px 0;
+}
+
+.menu {
+  background-color: rgba(0, 103, 56, 0.8);
+  padding: 0 28px 35px 28px;
+  border-radius: 3px;
+  h3 {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+}
+
+.ui-tabs ul:not(.menu-comments) {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ui-tabs > ul {
+  padding: 0;
+  margin-bottom: 26px;
+}
+
+.ui-tabs-tab li {
+  opacity: 0.5;
+}
+
+.ui-tabs-tab > a {
+  font-size: 36px;
+  background: url("../img/tab-bcg.jpg") no-repeat 50% 50%;
+  padding: 0 38px 25px;
+  border-radius: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.ui-tabs-active li {
+  opacity: 1;
+}
+
+.tab-options {
+  padding: 0 26px;
+  margin-top: 15px;
+  font-size: 22px;
+  li {
+    border-radius: 10px;
+    background-color: #231e21;
+    padding: 0 14px;
+    height: 23px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.ui-tabs-panel {
+  h4 {
+    font-size: 26px;
+    margin: 12px 0 3px 0;
+  }
+  p {
+    margin: 0;
+  }
+  ol {
+    padding-right: 0;
+    list-style: none;
+    counter-reset: ordered;
+    margin: 0 0 20px 0;
+    font-size: 22px;
+    li {
+      position: relative;
+    }
+    li:before {
+      counter-increment: ordered;
+      content: counter(ordered);
+      margin-left: 23px;
+    }
+    li:after {
+      content: '15 ₪';
+      position: absolute;
+      left: 0;
+
+    }
+  }
+  ol.second {
+    counter-reset: ordered + 4;
+  }
+  ol.third {
+    counter-reset: ordered + 9;
+  }
+}
+
+.menu-block {
+  margin-bottom: 51px;
+}
+
+.menu-comments {
+  list-style: none;
+  padding-right: 0;
+  font-size: 18px;
+  line-height: 1;
+  li:before {
+    content:'*';
+  }
+}

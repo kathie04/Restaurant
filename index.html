@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="js/swiper-4.4.1/swiper-4.4.1/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper-4.4.1/swiper-4.4.1/dist/js/swiper.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header class="header" id="" header>
+    <div class="container">
+        <div class="layout layout-header">
+            <div class="title">
+                <h1>
+                    מטבח <br>
+                    ישראלי <br>
+                    מפנק
+                </h1>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo1.png">
+                </a>
+            </div>
+            <div class="socials">
+                <a href="#" class="button plain-btn">
+                </a>
+                <a href="#" class="button fb-btn">
+                </a>
+            </div>
+            <div class="mobile-menu">
+                <svg class="icon icon-menu" viewBox="0 0 24 24">
+                    <path d="M21 11h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+                    <path d="M3 7h18c0.6 0 1-0.4 1-1s-0.4-1-1-1h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1z"></path>
+                    <path d="M21 17h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+                </svg>
+            </div>
+        </div>
+        <ul class="navbar">
+            <li><a href="#section-menu">תפריט</a></li>
+            <li><a href="#section-about">קבוצות</a></li>
+            <li><a href="#section-specials">אטרקציות</a></li>
+            <li><a href="#section-about">אודות</a></li>
+            <li><a href="#section-contact">צור קשר</a></li>
+        </ul>
+    </div>
+</header>
+<main class="main" id="main">
+    <section class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/bigstock-Pea-Soup-With-Spices-On-Wood-B-62532074.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="img/bigstock-Bunch-of-fresh-asparagus-on-wo-75004600.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="img/bigstock-Appetizer--44541424.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/bigstock-ripe-avocado-cut-in-half-on-a--45744277.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="img/bigstock-Passion-fruits-on-wooden-backg-48153005.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="img/bigstock-steak-63019078.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/bigstock-Fun-With-Food-68022340.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="padding">
+        <a class="arrow" href="#section-menu"></a>
+    </section>
+    <section class="section-menu section" id="section-menu">
+        <div class="container">
+            <div class="menu">
+                <h3>- המטבח שלנו כשר -</h3>
+                <div class="tabs" id="tabs">
+                    <ul>
+                        <li>
+                            <a href="#tabs-1">תפריט מסעדה</a>
+                            <ul class="tab-options">
+                                <li><a href="#">הדפס</a></li>
+                                <li><a href="#">שלח</a></li>
+                                <li><a href="#">שתף</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#tabs-2">תפריט קבוצות</a>
+                            <ul class="tab-options">
+                                <li><a href="#">הדפס</a></li>
+                                <li><a href="#">שלח</a></li>
+                                <li><a href="#">שתף</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="menu-block">
+                            <h4>ראשונות</h4>
+                            <ol class="first">
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                            </ol>
+                            <h4>עיקריות</h4>
+                            <ol class="second">
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                            </ol>
+                            <h4>שתייה</h4>
+                            <ol class="third">
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <div class="menu-block">
+                            <h4>ראשונות</h4>
+                            <ol class="first">
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                            </ol>
+                            <h4>עיקריות</h4>
+                            <ol class="second">
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                            </ol>
+                            <h4>שתייה</h4>
+                            <ol class="third">
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                                <li>שם המנה | הערות, המלצות, תיאור ומרכיבים ..............</li>
+                            </ol>
+                        </div>
+                        <ul class="menu-comments">
+                            <li>הערות מילוט טקסט כלשהו לדוגמה</li>
+                            <li>טקסט כלשהו טקסט כלשהו הערות מילוט טקסט כלשהו לדוגמה
+                            </li>
+                            <li>טקסט כלשהו הערות מילוט טקסט כלשהו לדוגמה</li>
+                            <li>הערות מילוט הערות הערות הערות טקסט כלשהו לדוגמה
+                            </li>
+                            <li>הערות מילוט טקסט כלשהו לדוגמה
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-groups section" id="section-groups">
+        <div class="container">
+            <div class="welcome">
+                <img src="img/block-logo.png" alt="">
+                <h3>נשמח לארח אתכם עם כל המשפחה,
+                    עם החברים לטיול או השותפים לעבודה
+                </h3>
+                <p>כל אחד ימצא אצלנו את המנה שלו: חומוס במתכון מנצח, תבשילים וסלטים טריים, בשר איכותי והמבורגר
+                    משובח. אז תנו לנו לפנק אתכם עם בירה קרה - אנחנו נדאג להההההההכל... אתם רק צריכים תיאבון
+                    בריא!</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <img src="img/sun.png" alt="">
+                    <h3>פותחים שולחן</h3>
+                    <h4>בנחלי הערבה</h4>
+                    <p>בטיול הקרוב לערבה אתם מוזמנים לאכול ממש טוב! בואו להתאהב במטבח שלנו עם כל הקבוצה, נפתח עבורכם
+                        שולחן מדוגם בכל מקום שתבחרו - באמצע הנחל, על ראש הצוק או אצלנו בעין יהב</p>
+                </div>
+                <div class="feature">
+                    <img src="img/home.png" alt="">
+                    <h3>פותחים שולחן</h3>
+                    <h4>אצלכם בבית</h4>
+                    <p>את המפגש המשפחתי הבא כדאי לכם להעביר בקלות עם המטבח שלנו. נערוך עבורכם שולחן עם כל טוב בבית
+                        או בחצר, ונדאג לכל הילדים והגדולים שהגיעו לביקור מהצפון</p>
+                </div>
+                <div class="feature">
+                    <img src="img/car.png" alt="">
+                    <h3>פותחים שולחן</h3>
+                    <h4>בדרך לאילת</h4>
+                    <p>קבלו טיפ: את הנסיעה על כביש הערבה היפכו לאטרקציה אמיתית עם ארוחה מצויינת ושחייה חופשית בבריכה
+                        - בואו לביקור במטבח הטעים שלנו ותיהנו מאוירת המושב</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-specials section" id="section-specials">
+        <div class="container">
+            <div class="special">
+                <div class="special-image"><img src="img/sp1.png" alt=""></div>
+                <div class="special-content">
+                    <h2>בריכת השחייה</h2>
+                    <p>כל אורחי המסעדה מוזמנים לשחייה חופשית בבריכה - ללא תוספת תשלום!</p>
+                    <span>*מותנה בקנייה במסעדה בסכום של 50 ₪ לאדם</span>
+                </div>
+            </div>
+            <div class="special">
+                <div class="special-image"><img src="img/sp2.png" alt=""></div>
+                <div class="special-content">
+                    <h2>מופעים ומסיבות</h2>
+                    <p>בואו ליהנות עם בירה קרה ומוסיקה איכותית, בארועי תרבות איכותיים שאנו עורכים במסעדה</p>
+                    <a href="#" class="button">
+                        <span>צפה בלוח הארועים בפייסבוק </span>
+                        <svg class="icon icon-facebook" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                            <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="special">
+                <div class="special-image"><img src="img/sp3.png" alt=""></div>
+                <div class="special-content">
+                    <h2>ארועי קונספט</h2>
+                    <p>ערב רומנטי, שבוע מנות ילדים או הקרנת הגמר של מכבי - אנחנו כבר מבשלים לכם אירוע חם :)</p>
+                    <a href="#" class="button">
+                        <span>צפה בלוח הארועים בפייסבוק </span>
+                        <svg class="icon icon-facebook" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                            <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="special">
+                <div class="special-image"><img src="img/sp4.png" alt=""></div>
+                <div class="special-content">
+                    <h2>הרצאות</h2>
+                    <p>בישול מולקולרי, חוויות קולינריות מאינדונזיה או ירקות מיובשים... מבטיחים שיהיה מעניין</p>
+                    <a href="#" class="button">
+                        <span>צפה בלוח הארועים בפייסבוק </span>
+                        <svg class="icon icon-facebook" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                            <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="special">
+                <div class="special-image"><img src="img/sp5.png" alt=""></div>
+                <div class="special-content">
+                    <h2>מנות מיוחדות</h2>
+                    <p>לפי מצב הרוח וחומרי הגלם, אנו מכינים מנה יומית מיוחדת ומנה שבועית גדולה ומושקעת!</p>
+                    <a href="#" class="button">
+                        <span>צפה בלוח הארועים בפייסבוק </span>
+                        <svg class="icon icon-facebook" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                            <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-about section" id="section-about">
+        <div class="container">
+            <div class="about">
+                <h3> ברוכים הבאים לדק בר -<br> מטבח ישראלי מפנק, מגוון ועשיר</h3>
+                <p>כל התבשילים והסלטים מעשה ידינו ומוגשים תמיד טריים, הבשר איכותי והוא נטחן מדי יום לקבב ולהמבורגר
+                    מדהים. סגנון הבישול שלנו יחד עם האוירה הנעימה מתאימים לכולם - מטיילים, בליינים, זוגות, משפחות
+                    וילדים</p>
+                <img src="img/about1.png" alt="">
+                <p>את הארוחות אנחנו מגישים לאורחינו במסעדה, למטיילים בשטחי הערבה, לנופשים בצימרים ולתושבי הערבה
+                    בבתיהם. המסעדה ממוקמת בבריכת מושב עין יהב על משטח עץ נעים ובמרכזה בר אלכוהול לסועדים עם מזנון
+                    מהיר לאורחי הבריכה</p>
+                <img src="img/about2.png" alt="">
+                <p>המסעדה משקפת את הלך הרוח המשפחתי שלנו - סבלנות, נדיבות והומור. הקמנו אותה במקביל להיותנו חקלאים.
+                    אנחנו מראשוני המתיישבים במושב ומגדלים ירקות כבר למעלה מחמישים שנה</p>
+                <img src="img/about3.png" alt="">
+                <p>אם חשבתם לבלות את חופשתכם בערבה, קבלו את המלצתנו החמה! יש כאן המון מה לראות ולעשות - זהו איזור
+                    נפלא לטיולים. נשמח לייעץ ולעזור בגיבוש תכנית הכוללת טיולי ג׳יפים, סוסים, אופניים ולינה כפרית</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-contact section" id="section-contact">
+        <div class="container">
+            <div class="contact">
+                <h6>לפרטים והזמנות חייגו:</h6>
+                <p class="tel">787-894382947</p>
+                <h6>קצרים בזמן? אין בעיה...<br>
+                    השאירו פרטים ונחזור אליכם!</h6>
+                <form action="" class="form-contact">
+                    <div class="form-fields">
+                        <div class="form-inputs">
+                            <input type="text" placeholder="שם">
+                            <input type="email" placeholder="מייל">
+                            <input type="tel" placeholder="טלפון">
+                        </div>
+                        <textarea name="" cols="30" rows="3" placeholder="הודעה"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox-text">מאשר קבלת חומרי פרסום</div>
+                        </label>
+                        <input type="submit" class="button" value="שלח">
+                    </div>
+                </form>
+                <div class="info">
+                    <div class="address">
+                        <h4>בפייסבוק</h4>
+                        <p>בפייסבוקבפייסבוק, 87544</p>
+                        <span class="meta">שלנו<a href="">בפייסבוק</a>שעות הפתיחה מתעדכנות </span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="button button-email"></a>
+                        <a href="#" class="button button-facebook"></a>
+                        <a href="#" class="button button-waze"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-signup section" id="section-signup">
+        <div class="container">
+            <div class="signup">
+                <img src="img/plain.png" alt="">
+                <p>הירשם עכשיו לניוזלטר שלנו ונדאג שתדע ראשון על כל המבצעים, האירועים והמנות המיוחדות!</p>
+                <form action="" class="form-signup">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">מאשר קבלת חומרי פרסום</div>
+                    </label>
+                    <div class="form-fields">
+                        <input type="text" placeholder="שם">
+                        <input type="email" placeholder="מייל">
+                        <input type="tel" placeholder="טלפון">
+                        <input type="submit" class="button" value="שלח">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer" id="footer">לבינגר</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+section {
+  position: relative;
+}
+
+section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+section.active:after {
+  position: fixed;
+}
+
+section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-groups, .section-specials, .section-about,
+.section-menu {
+  min-height: 100vh;
+}

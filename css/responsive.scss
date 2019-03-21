@@ -1,0 +1,151 @@
+@import 'variables';
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-bottom: 0;
+    padding-top: 25px;
+  }
+  .layout-header {
+    position: relative;
+    justify-content: space-between;
+    .logo {
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+    .socials {
+      position: absolute;
+      top: -25px;
+      left: 67%;
+      a {
+        width: 37px;
+        height: 36px;
+        svg {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    display: block;
+    margin-top: 13px;
+    svg {
+      color: $global-muted-color;
+      font-size: 60px;
+    }
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 180px;
+    position: absolute;
+    top: 45px;
+    right: auto;
+    left: 15px;
+    li:not(:last-child) {
+      border-bottom: 1px solid #043f21;
+    }
+  }
+
+  .navbar.active {
+    display: block;
+  };
+
+  .about img,
+  .welcome img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-contact .form-fields {
+    flex-direction: column;
+    .form-inputs {
+      width: 100%;
+      margin-bottom: 20px;
+      input {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .info {
+    flex-direction: column;
+    .address {
+      border-left: none;
+      margin-bottom: 20px;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .info > * {
+    width: 100%;
+  }
+
+  .form-signup  .form-fields {
+    flex-direction: column;
+    input {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .ui-tabs .ui-tabs-nav {
+    flex-direction: column;
+  }
+
+  .ui-tabs-tab > a {
+    font-size: 24px;
+  }
+
+  .tab-options {
+    font-size: 14px;
+  }
+  .ui-tabs-panel ol {
+    font-size: 14px;
+  }
+
+  .menu-comments {
+    font-size: 12px;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  h3, h4 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  span {
+    font-size: 12px !important;
+  }
+  .special-content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .special-content .button {
+    .icon {
+      font-size: 16px;
+    }
+  }
+  .section-groups, .section-specials, .section-about,
+  .section-menu, .section-contact, .section-signup  {
+    padding-top: 130px;
+    padding-bottom: 20px;
+  }
+}
